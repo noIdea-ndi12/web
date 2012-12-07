@@ -1,0 +1,127 @@
+
+/* Commun ----------- */
+body, header, div, p, input, h1, h2, h3, h4, h5, h6 {
+	margin: 0px;
+	padding: 0px;
+}
+#container {
+	position: relative;
+	height: 100%;
+}
+
+header {
+	position: absolute;
+	left: 10px;
+	top : 10px;
+}
+#indexSearch {
+	margin: -16 0 0 -126px;
+	padding: 0px;
+	background-color: #FFF;
+	width: 252px;
+	padding: 3px 1px 3px 3px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+
+#indexSearch a {
+	text-indent: -9999px;
+	min-width: 29px;
+	padding: 9px;
+	background-image: url('../images/rech_arrow.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-origin: padding-box;
+	text-decoration: none;
+	margin: 0px;
+	outline: none
+}
+#indexSearch a span{
+	visibility: hidden;
+}
+#homeSearch {
+	height: 32px;
+	margin: 0px;
+	border: 0px;
+	width: 206px;
+}
+
+.color_1{
+	background-color: #0C1C8C;
+}
+
+.color_2{
+	background-color: #EF2B2D;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+	body{background-color: #002233};
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+	body{background-color: #004466};
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+	body{background-color: red};
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+	body{background-color: #335577};
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+	body{background-color: #557799};
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+	body{background-color: #775566};
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+	body{background-color: #aabbcc};
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+	body{background-color: #998833};
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+	body{background-color: #aa33cc};
+}
