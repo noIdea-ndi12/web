@@ -22,6 +22,13 @@
 	 
 	 	
  	}
+
+ 	function display_recherche(data){
+
+
+
+ 	}
+ 	
  	function query(url, method, parameters, callback){
 	 	url="public/js/data.json";
 	 	if(method=="POST" || method=="GET"){
@@ -51,6 +58,11 @@
 	query("/street/get/"+id, "GET",'' ,display_result);
 	
 	 }
+
+	 function search_street(street){ 
+	query("/street/search/", "POST",street ,display_recherche);
+	
+	 }
 	
 	function add_street(data){
 		query("/street/add", "POST", data);		
@@ -66,14 +78,17 @@
 	}*/
 	
 	
-	$('form').submit(function() {
+	$('#toto').submit(function() {
 		console.log(this.action);
-		add_street($(this).serialize());
+		search_street($(this).serialize());
 	
   return false;
 });
-	$("#eeadd_object").click(function() {
-		add_street($(this).parent().attr('id'))
+	$("#go").live('click', function() {
+		var parent=$(this).parent();
+		console.log($(parent).serialize());
+		//add_street($(this).parent().attr('id'))
+		search_street($(parent).serialize());
 		
 		
 	});
